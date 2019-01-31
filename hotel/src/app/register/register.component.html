@@ -1,0 +1,48 @@
+
+<div class="limiter">
+  <div class="container-login100">
+    
+    <div class="login100-more" style="background-image: url('../../assets/image/pen.jpg');"></div>
+
+    <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+      <form id="loginForm" [formGroup]="myForm" novalidate (ngSubmit)="onSubmit(myForm)" class="login100-form">
+
+        <span class="login100-form-title p-b-59">
+          Register
+        </span>
+
+        <span class="label-input100">EmployeeName</span>
+        <input class="input100" formControlName="EmployeeName" id="EmployeeName" placeholder="Your EmployeeName">
+        <span class="focus-input100"></span>
+
+
+        <span class="label-input100">password</span>
+        <input class="input100" formControlName="password" id="password" placeholder="Your password" type="password">
+        <span class="focus-input100"></span>
+
+        <span class="label-input100">EmployeeContact</span>
+        <input class="input100" formControlName="EmployeeContact" id="EmployeeContact" placeholder="Your EmployeeContact"  >
+        <span class="focus-input100"></span>  
+
+        <span class="label-input100">role</span>
+        <input class="input100" formControlName="role" id="role" placeholder="Your role"  >
+        <span class="focus-input100"></span>
+
+        <span class="label-input100">EmiloyeeEmail</span>
+        <input class="input100" formControlName="EmiloyeeEmail" id="EmiloyeeEmail" placeholder="Your EmiloyeeEmail"  >
+        <span class="focus-input100"></span>
+
+        <span class="label-input100">eMailingAddress</span>
+        <input class="input100" formControlName="eMailingAddress" id="eMailingAddress" placeholder="Your eMailingAddress"  >
+        <span class="focus-input100"></span>
+
+        <span class="label-input100">eAccountNumber</span>
+        <input class="input100" formControlName="eAccountNumber" id="eAccountNumber" placeholder="Your eAccountNumber"  >
+        <span class="focus-input100"></span>
+
+        <button class="btn btn-primary" type="submit">Register</button>
+
+      </form>
+    </div>
+  </div>
+</div>

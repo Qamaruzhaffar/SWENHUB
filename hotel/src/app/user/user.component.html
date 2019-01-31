@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="nav-link" routerLink="/user">Check-in/out</a>
+          </li>
+          <li>
+            <a class="nav-link" routerLink="/house">HouseKeeping</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<table id="t01">
+  <tr>
+    <th>roomNum</th>
+    <th>roomStatus</th>
+    <th>BookingId</th>
+    <th>updateStatus</th>
+    <th>updateBookingId</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let post of posts" [formGroup]="myForm">
+    <td>{{post.roomNum}}</td>
+    <td>{{post.roomStatus}}</td>
+    <td>{{post.BookingId}}</td>
+    <td>
+      <select formControlName="roomStatus" id="accounttype" placeholder="Your Account Type">
+        <option value="Available">Check-out</option>
+        <option value="Not-Available">Check-in</option>
+      </select>
+    </td>
+    <td>
+      <input formControlName="BookingId" id="BookingId" placeholder="Your bookingid">
+    </td>
+    <td>
+      <a href="" (click)="updateStatus(post._id)" class="card-link" routerLink="/home">Update</a>
+    </td>
+  </tr>
+</table>

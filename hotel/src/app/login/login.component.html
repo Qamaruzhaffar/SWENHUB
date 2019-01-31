@@ -1,0 +1,29 @@
+<div class="limiter">
+  <div class="container-login100">
+    
+    <div class="login100-more" style="background-image: url('../../assets/image/calculator.jpg');"></div>
+
+    <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+      <form id="loginForm" [formGroup]="myForm" novalidate (ngSubmit)="onSubmit(myForm)" class="login100-form">
+
+        <span class="login100-form-title p-b-59">
+          Login
+        </span>
+
+        <span class="label-input100">Username</span>
+        <input class="input100" formControlName="EmployeeName" id="EmployeeName" placeholder="Your EmployeeName">
+
+        <span class="focus-input100"></span>
+
+
+        <span class="label-input100">Password</span>
+        <input class="input100" formControlName="password" id="password" placeholder="Your password" type="password">
+        <span class="focus-input100"></span>
+
+        <button class="btn btn-primary" type="submit">Login</button>
+        <a routerLink="/register" routerLinkActive="active">Register here!</a>
+
+      </form>
+    </div>
+  </div>
+</div>
